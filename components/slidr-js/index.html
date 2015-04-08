@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="shortcut icon" href="http://www.bchanx.com/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="index_files/css.css">
+    <script src="index_files/ga.js" async="" type="text/javascript"></script><script src="index_files/widgets.js" id="twitter-wjs"></script><script type="text/javascript">
+      var bchanx = bchanx || {};
+      
+        bchanx["type"] = "prod";
+      
+    </script>
+    
+      <link rel="stylesheet" href="index_files/demo-slidr.css" media="screen" charset="UTF-8" type="text/css">
+    
+    
+  <title>slidr.js - add some slide effects.</title>
+  <link rel="canonical" href="http://www.bchanx.com/slidr">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="index_files/highlight.css">
+  <link rel="stylesheet" type="text/css" href="index_files/markdown.css">
+
+  <style type="text/css"></style></head>
+
+  <body data-twttr-rendered="true" ontouchstart="">
+    <div id="header">
+  <div id="header-container">
+  <div id="header-content">
+    <div id="header-title" style="text-align: left; font-weight: 600">slidr.js</div>
+    <div id="header-subtitle" style="text-align: left">..add some slide effects.</div>
+    <div id="header-social">
+      <div class="social-button">
+  <iframe src="index_files/github-btn.html" allowtransparency="true" scrolling="0" frameborder="0" height="20" width="107"></iframe>
+</div>
+      <div class="social-button">
+  <iframe src="index_files/github-btn_002.html" allowtransparency="true" scrolling="0" frameborder="0" height="20" width="107"></iframe>
+</div>
+      <div class="social-button">
+  <iframe style="width: 107px; height: 20px;" data-twttr-rendered="true" title="Twitter Tweet Button" class="twitter-share-button twitter-tweet-button twitter-share-button twitter-count-horizontal" src="index_files/tweet_button.html" allowtransparency="true" scrolling="no" id="twitter-widget-0" frameborder="0"></iframe>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</div>
+    </div>
+  </div>
+</div>
+</div>
+    <div id="body" class="clearfix">
+  <img id="github-banner-image" alt="Fork me on GitHub" src="index_files/forkme_right_darkblue_121621.png">
+  <a id="github-banner" href="https://www.github.com/bchanx/slidr"></a>
+
+  <div class="blog-container clearfix">
+    <div style="visibility: visible; opacity: 1; display: block; position: relative; overflow: visible; transition: height 0.05s ease-out 0s, width 0.05s ease-out 0s; height: 885px;" id="slidr">
+      <div style="display: block; visibility: visible; position: absolute; opacity: 1; z-index: 1; pointer-events: auto; backface-visibility: hidden; transform-style: preserve-3d; animation: 0.4s ease-out 0s normal none 1 running slidr-fade-in;" class="slidr-home" data-slidr="home">
+        <div class="block demo">
+          A simple, lightweight javascript library for adding slide transitions to your page. No dependencies required.
+          <br><br>
+          Check out the demo below, or read the <a href="#docs">documentation</a>.
+        </div>
+        <div class="block">
+          <div style="visibility: visible; opacity: 1; display: block; position: relative; overflow: visible; transition: height 0.05s ease-out 0s, width 0.05s ease-out 0s;" id="slidr-home-demo" class="demo-slides">
+            <div style="display: block; visibility: hidden; position: absolute; opacity: 0; z-index: 0; pointer-events: none; backface-visibility: hidden; transform-style: preserve-3d; animation: 0.6s ease-out 0s normal none 1 running slidr-linear-out-right-fade-w-540;" data-slidr="one">linear</div>
+            <div style="display: block; visibility: hidden; position: absolute; opacity: 0; z-index: 0; pointer-events: none; backface-visibility: hidden; transform-style: preserve-3d; animation: 0.6s ease-out 0s normal none 1 running slidr-linear-out-right-fade-w-540;" data-slidr="two">linear</div>
+            <div style="display: block; visibility: hidden; position: absolute; opacity: 0; z-index: 0; pointer-events: none; backface-visibility: hidden; transform-style: preserve-3d; animation: 0.4s ease-out 0s normal none 1 running slidr-fade-out;" data-slidr="three">linear</div>
+            <div style="display: block; visibility: hidden; position: absolute; opacity: 0; z-index: 0; pointer-events: none; backface-visibility: hidden; transform-style: preserve-3d; animation: 0.4s ease-out 0s normal none 1 running slidr-fade-out;" data-slidr="four">linear</div>
+            <div style="display: block; visibility: hidden; position: absolute; opacity: 0; z-index: 0; pointer-events: none; backface-visibility: hidden; transform-style: preserve-3d;" data-slidr="five">linear</div>
+            <div style="display: block; visibility: visible; position: absolute; opacity: 1; z-index: 1; pointer-events: auto; backface-visibility: hidden; transform-style: preserve-3d; animation: 0.4s ease-out 0s normal none 1 running slidr-fade-in;" data-slidr="six">linear</div>
+          <aside style="opacity: 0; z-index: 0; pointer-events: none; visibility: hidden;" class="" id="slidr-home-demo-breadcrumbs"><ul class="slidr-breadcrumbs"><li></li><li></li><li></li><li data-slidr-breadcrumbs="six" class="normal active"></li></ul><ul class="slidr-breadcrumbs"><li></li><li></li><li></li><li data-slidr-breadcrumbs="five" class="normal"></li></ul><ul class="slidr-breadcrumbs"><li data-slidr-breadcrumbs="one" class="normal"></li><li data-slidr-breadcrumbs="two" class="normal"></li><li data-slidr-breadcrumbs="three" class="normal"></li><li data-slidr-breadcrumbs="four" class="normal"></li></ul></aside><aside style="opacity: 1; z-index: 2; visibility: visible; pointer-events: none; animation: 0.4s ease-out 0s normal none 1 running slidr-fade-in;" class="border" id="slidr-home-demo-control"><div data-slidr-control="up" class="slidr-control up"></div><div data-slidr-control="down" class="slidr-control down"></div><div data-slidr-control="left" class="slidr-control left disabled"></div><div data-slidr-control="right" class="slidr-control right disabled"></div></aside></div>
+        </div>
+        <div id="slidr-home-demo-effects" class="block" style="text-align: center">
+          <div class="cube">cube</div>
+          <div class="linear active">linear</div>
+          <div class="fade">fade</div>
+          <div class="none">none</div>
+        </div>
+        <div id="slidr-home-demo-settings" class="block" style="text-align: center">
+          <div class="controls active">controls</div>
+          <div class="breadcrumbs">breadcrumbs</div>
+        </div>
+        <div class="block demo">
+          <br>
+          Works on any inline, inline-block or block elements.
+          <br>
+          Slides can contain any html content, no restrictions.*
+          <br>
+          <span class="subtext">(Tested on Chrome 26.0, Firefox 20.0, Safari 5.1.7, IE 10, Opera 16.0. Limited support for IE8/9.)</span>
+          <br><br>
+          <span class="subtext2">*the goal, not a guarantee.</span>
+          <br><br>
+          Built with love.
+        </div>
+      </div>
+      <div style="display: block; visibility: hidden; position: absolute; opacity: 0; z-index: 0; pointer-events: none; backface-visibility: hidden; transform-style: preserve-3d;" class="slidr-docs" data-slidr="docs">
+        <div class="block">
+          <a href="#home">Home</a>
+        </div>      
+        <div class="block">
+          <div class="markdown" id="features"><div class="breadcrumb-link"><div class="action"><a href="#features">Features</a></div><div class="top"><a href="#">Top</a></div><h2>Features</h2></div>
+<ul>
+<li><strong>Add as many Slidr's as you want</strong> - <em>even place them within each other.</em></li>
+<li><strong>Dynamic resizing</strong> - <em>adapts to the size of its content, unless you don't want it to.</em></li>
+<li><strong>Keyboard navigation</strong> - <em>move your cursor on top of the demo below, and hit the arrow keys!</em></li>
+<li><strong>Touch navigation</strong> (mobile) - <em>change the slides below by swiping left, right, up or down!</em></li>
+</ul>
+</div>
+          <div class="slidr-example">
+            <div style="visibility: visible; opacity: 1; display: block; position: relative; overflow: visible; transition: height 0.05s ease-out 0s, width 0.05s ease-out 0s;" id="slidr-nav-demo" class="demo-slides">
+              <div style="display: block; visibility: visible; position: absolute; opacity: 1; z-index: 1; pointer-events: auto; backface-visibility: hidden; transform-style: preserve-3d; animation: 0.4s ease-out 0s normal none 1 running slidr-fade-in;" data-slidr="one">one</div>
+              <div style="display: block; visibility: hidden; position: absolute; opacity: 0; z-index: 0; pointer-events: none; backface-visibility: hidden; transform-style: preserve-3d;" data-slidr="two">two</div>
+              <div style="display: block; visibility: hidden; position: absolute; opacity: 0; z-index: 0; pointer-events: none; backface-visibility: hidden; transform-style: preserve-3d;" data-slidr="three">three</div>
+            <aside style="opacity: 0; z-index: 0; pointer-events: none; visibility: hidden;" class="disabled" id="slidr-nav-demo-breadcrumbs"><ul class="slidr-breadcrumbs"><li data-slidr-breadcrumbs="one" class="normal active"></li><li data-slidr-breadcrumbs="two" class="normal"></li><li data-slidr-breadcrumbs="three" class="normal"></li></ul></aside><aside style="opacity: 0; z-index: 0; visibility: hidden; pointer-events: none;" class="disabled" id="slidr-nav-demo-control"><div data-slidr-control="up" class="slidr-control up"></div><div data-slidr-control="down" class="slidr-control down"></div><div data-slidr-control="left" class="slidr-control left"></div><div data-slidr-control="right" class="slidr-control right"></div></aside></div>
+          </div>
+          <div class="markdown" id="instructions"><div class="breadcrumb-link"><div class="action"><a href="#instructions">Instructions</a></div><div class="top"><a href="#">Top</a></div><h2>Instructions</h2></div>
+<p>Include either <code>slidr.js</code> or <code>slidr.min.js</code> somewhere at the bottom of your html page, after the body content.</p>
+<pre><code class="lang-javascript xml"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span> <span class="attribute">src</span>=<span class="value">"/path/to/slidr.min.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></code></pre>
+</div>
+          <div class="markdown" id="html"><div class="breadcrumb-link"><div class="action"><a href="#html">HTML</a></div><div class="top"><a href="#">Top</a></div><h2>HTML</h2></div>
+<p>slidr.js works on any <code>inline</code>, <code>inline-block</code> or <code>block</code> elements with an <code>id</code> defined.
+Valid slides include any first-level children elements with the <code>data-slidr</code> attribute set to some unique value within the parent scope. For example:</p>
+<pre><code class="lang-html xml"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">id</span>=<span class="value">"slidr-ul"</span> <span class="attribute">style</span>=<span class="value">"display: inline"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">data-slidr</span>=<span class="value">"one"</span>&gt;</span>apple<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">data-slidr</span>=<span class="value">"two"</span>&gt;</span>banana<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">data-slidr</span>=<span class="value">"three"</span>&gt;</span>coconut<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"slidr-img"</span> <span class="attribute">style</span>=<span class="value">"display: inline-block"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">img</span> <span class="attribute">data-slidr</span>=<span class="value">"one"</span> <span class="attribute">src</span>=<span class="value">"/static/images/apple.png"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">img</span> <span class="attribute">data-slidr</span>=<span class="value">"two"</span> <span class="attribute">src</span>=<span class="value">"/static/images/banana.png"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">img</span> <span class="attribute">data-slidr</span>=<span class="value">"three"</span> <span class="attribute">src</span>=<span class="value">"/static/images/coconut.png"</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"slidr-div"</span> <span class="attribute">style</span>=<span class="value">"dislay: block"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">data-slidr</span>=<span class="value">"one"</span>&gt;</span>apple<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">data-slidr</span>=<span class="value">"two"</span>&gt;</span>banana<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">data-slidr</span>=<span class="value">"three"</span>&gt;</span>coconut<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+<p>are all valid html markup for creating three different <code>Slidr</code>'s within the same page.
+(inline elements are transformed into inline-blocks in order to apply transitions).</p>
+</div>
+
+          <div class="slidr-example hideOnSmall" style="margin-bottom: 0">
+            <ul id="slidr-ul" style="display: inline-block; visibility: visible; opacity: 1; position: relative; overflow: hidden; transition: height 0.05s ease-out 0s, width 0.05s ease-out 0s; width: 180px; height: 100px;">
+              <li style="display: list-item; visibility: visible; position: absolute; opacity: 1; z-index: 1; pointer-events: auto; backface-visibility: hidden; transform-style: preserve-3d; animation: 0.4s ease-out 0s normal none 1 running slidr-fade-in;" data-slidr="one">apple</li>
+              <li style="display: list-item; visibility: hidden; position: absolute; opacity: 0; z-index: 0; pointer-events: none; backface-visibility: hidden; transform-style: preserve-3d;" data-slidr="two">banana</li>
+              <li style="display: list-item; visibility: hidden; position: absolute; opacity: 0; z-index: 0; pointer-events: none; backface-visibility: hidden; transform-style: preserve-3d;" data-slidr="three">coconut</li>
+            <aside style="opacity: 0; z-index: 0; pointer-events: none; visibility: hidden;" class="disabled" id="slidr-ul-breadcrumbs"><ul class="slidr-breadcrumbs"><li data-slidr-breadcrumbs="one" class="normal active"></li><li data-slidr-breadcrumbs="two" class="normal"></li><li data-slidr-breadcrumbs="three" class="normal"></li></ul></aside><aside style="opacity: 1; z-index: 2; visibility: visible; pointer-events: none; animation: 0.4s ease-out 0s normal none 1 running slidr-fade-in;" class="border disabled" id="slidr-ul-control"><div data-slidr-control="up" class="slidr-control up disabled"></div><div data-slidr-control="down" class="slidr-control down disabled"></div><div data-slidr-control="left" class="slidr-control left disabled"></div><div data-slidr-control="right" class="slidr-control right"></div></aside></ul>
+
+            <div id="slidr-img" style="display: inline-block; visibility: visible; opacity: 1; position: relative; overflow: hidden; transition: height 0.05s ease-out 0s, width 0.05s ease-out 0s; width: 180px; height: 100px;">
+              <img style="display: inline; visibility: visible; position: absolute; opacity: 1; z-index: 1; pointer-events: auto; backface-visibility: hidden; transform-style: preserve-3d; animation: 0.4s ease-out 0s normal none 1 running slidr-fade-in;" data-slidr="one" src="index_files/apple.png">
+              <img style="display: inline; visibility: hidden; position: absolute; opacity: 0; z-index: 0; pointer-events: none; backface-visibility: hidden; transform-style: preserve-3d;" data-slidr="two" src="index_files/banana.png">
+              <img style="display: inline; visibility: hidden; position: absolute; opacity: 0; z-index: 0; pointer-events: none; backface-visibility: hidden; transform-style: preserve-3d;" data-slidr="three" src="index_files/coconut.png">
+            <aside style="opacity: 0; z-index: 0; pointer-events: none; visibility: hidden;" class="disabled" id="slidr-img-breadcrumbs"><ul class="slidr-breadcrumbs"><li data-slidr-breadcrumbs="one" class="normal active"></li><li data-slidr-breadcrumbs="two" class="normal"></li><li data-slidr-breadcrumbs="three" class="normal"></li></ul></aside><aside style="opacity: 1; z-index: 2; visibility: visible; pointer-events: none; animation: 0.4s ease-out 0s normal none 1 running slidr-fade-in;" class="border disabled" id="slidr-img-control"><div data-slidr-control="up" class="slidr-control up disabled"></div><div data-slidr-control="down" class="slidr-control down disabled"></div><div data-slidr-control="left" class="slidr-control left disabled"></div><div data-slidr-control="right" class="slidr-control right"></div></aside></div>
+
+            <div id="slidr-div" style="display: block; visibility: visible; opacity: 1; position: absolute; overflow: hidden; transition: height 0.05s ease-out 0s, width 0.05s ease-out 0s; width: 180px; height: 100px;">
+              <div style="display: block; visibility: visible; position: absolute; opacity: 1; z-index: 1; pointer-events: auto; backface-visibility: hidden; transform-style: preserve-3d; animation: 0.4s ease-out 0s normal none 1 running slidr-fade-in;" data-slidr="one">apple</div>
+              <div style="display: block; visibility: hidden; position: absolute; opacity: 0; z-index: 0; pointer-events: none; backface-visibility: hidden; transform-style: preserve-3d;" data-slidr="two">banana</div>
+              <div style="display: block; visibility: hidden; position: absolute; opacity: 0; z-index: 0; pointer-events: none; backface-visibility: hidden; transform-style: preserve-3d;" data-slidr="three">coconut</div>
+            <aside style="opacity: 0; z-index: 0; pointer-events: none; visibility: hidden;" class="disabled" id="slidr-div-breadcrumbs"><ul class="slidr-breadcrumbs"><li data-slidr-breadcrumbs="one" class="normal active"></li><li data-slidr-breadcrumbs="two" class="normal"></li><li data-slidr-breadcrumbs="three" class="normal"></li></ul></aside><aside style="opacity: 1; z-index: 2; visibility: visible; pointer-events: none; animation: 0.4s ease-out 0s normal none 1 running slidr-fade-in;" class="border disabled" id="slidr-div-control"><div data-slidr-control="up" class="slidr-control up disabled"></div><div data-slidr-control="down" class="slidr-control down disabled"></div><div data-slidr-control="left" class="slidr-control left disabled"></div><div data-slidr-control="right" class="slidr-control right"></div></aside></div>
+          </div>
+
+          <div class="markdown" id="javascript"><div class="breadcrumb-link"><div class="action"><a href="#javascript">Javascript</a></div><div class="top"><a href="#">Top</a></div><h2>Javascript</h2></div>
+<p>A global <code>slidr</code> object is available for calling. The most minimal way of creating a slidr is this:</p>
+<pre><code class="lang-javascript sql">slidr.<span class="operator"><span class="keyword">create</span>(<span class="string">'slidr-id'</span>).<span class="keyword">start</span>();</span></code></pre>
+<p><code>create()</code> accepts an optional settings parameter as its second argument. A call with all the settings toggled looks like so:</p>
+<pre><code class="lang-javascript javascript">slidr.create(<span class="string">'slidr-id'</span>, {
+  after: <span class="keyword">function</span>(e) { console.log(<span class="string">'in: '</span> + e.<span class="keyword">in</span>.slidr); },
+  before: <span class="keyword">function</span>(e) { console.log(<span class="string">'out: '</span> + e.out.slidr); },
+  breadcrumbs: <span class="literal">true</span>,
+  controls: <span class="string">'corner'</span>,
+  direction: <span class="string">'vertical'</span>,
+  fade: <span class="literal">false</span>,
+  keyboard: <span class="literal">true</span>,
+  overflow: <span class="literal">true</span>,
+  pause: <span class="literal">false</span>,
+  theme: <span class="string">'#222'</span>,
+  timing: { <span class="string">'cube'</span>: <span class="string">'0.5s ease-in'</span> },
+  touch: <span class="literal">true</span>,
+  transition: <span class="string">'cube'</span>
+}).start();</code></pre>
+<h3>Settings</h3>
+<p>Full details on available settings listed below:</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th align="center">Type</th>
+<th align="center">Default</th>
+<th align="right">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>after</code></td>
+<td align="center"><em>function</em></td>
+<td align="center">no-op</td>
+<td align="right">Callback function after a slide transition finishes.</td>
+</tr>
+<tr>
+<td><code>before</code></td>
+<td align="center"><em>function</em></td>
+<td align="center">no-op</td>
+<td align="right">Callback function before a slide transition begins.</td>
+</tr>
+<tr>
+<td><code>breadcrumbs</code></td>
+<td align="center"><em>bool</em></td>
+<td align="center">false</td>
+<td align="right">Show or hide breadcrumbs on start(). <code>true</code> or <code>false</code>.</td>
+</tr>
+<tr>
+<td><code>controls</code></td>
+<td align="center"><em>string</em></td>
+<td align="center">border</td>
+<td align="right">Show or hide control arrows on start(). <code>border</code>, <code>corner</code> or <code>none</code>.</td>
+</tr>
+<tr>
+<td><code>direction</code></td>
+<td align="center"><em>string</em></td>
+<td align="center">horizontal</td>
+<td align="right">The default direction for new slides. <code>horizontal</code> or <code>h</code>, <code>vertical</code> or <code>v</code>.</td>
+</tr>
+<tr>
+<td><code>fade</code></td>
+<td align="center"><em>bool</em></td>
+<td align="center">true</td>
+<td align="right">Whether slide transitions should fade in/out. <code>true</code> or <code>false</code>.</td>
+</tr>
+<tr>
+<td><code>keyboard</code></td>
+<td align="center"><em>bool</em></td>
+<td align="center">false</td>
+<td align="right">Whether to enable keyboard navigation upon mouseover. <code>true</code> or <code>false</code>.</td>
+</tr>
+<tr>
+<td><code>overflow</code></td>
+<td align="center"><em>bool</em></td>
+<td align="center">false</td>
+<td align="right">Whether to overflow transitions at slidr borders. <code>true</code> or <code>false</code>.</td>
+</tr>
+<tr>
+<td><code>pause</code></td>
+<td align="center"><em>bool</em></td>
+<td align="center">false</td>
+<td align="right">Whether to pause on mouseover when running in auto(). <code>true</code> or <code>false</code>.</td>
+</tr>
+<tr>
+<td><code>theme</code></td>
+<td align="center"><em>string</em></td>
+<td align="center">#fff</td>
+<td align="right">Sets color theme for breadcrumbs/controls. <code>#hexcode</code> or <code>rgba(value)</code>.</td>
+</tr>
+<tr>
+<td><code>timing</code></td>
+<td align="center"><em>object</em></td>
+<td align="center">{}</td>
+<td align="right">Custom animation timings to apply. <code>{'transition': 'timing'}</code>.</td>
+</tr>
+<tr>
+<td><code>touch</code></td>
+<td align="center"><em>bool</em></td>
+<td align="center">false</td>
+<td align="right">Whether to enable touch navigation for mobile devices. <code>true</code> or <code>false</code>.</td>
+</tr>
+<tr>
+<td><code>transition</code></td>
+<td align="center"><em>string</em></td>
+<td align="center">linear</td>
+<td align="right">The default transition to apply. <code>cube</code>, <code>linear</code>, <code>fade</code>, or <code>none</code>.</td>
+</tr>
+</tbody>
+</table>
+<p>The <code>before</code> and <code>after</code> callback functions return the following metadata:</p>
+<pre><code class="lang-javascript css"><span class="rules">{
+  <span class="rule"><span class="attribute">id</span>:<span class="value"> <span class="string">"slidr-id"</span>,
+  in: {
+    el: #&lt;htmlelement&gt;,
+    slidr: <span class="string">"data-slidr-in"</span>,
+    trans: <span class="string">"transition-in"</span>,
+    dir: <span class="string">"direction-in"</span>
+  }</span></span></span>,
+  <span class="tag">out</span>: <span class="rules">{
+    <span class="rule"><span class="attribute">el</span>:<span class="value"> #&lt;htmlelement&gt;,
+    slidr: <span class="string">"data-slidr-out"</span>,
+    trans: <span class="string">"transition-out"</span>,
+    dir: <span class="string">"direction-out"</span>
+  }</span></span></span>
+}</code></pre>
+<h3>Global API</h3>
+<p>The global <code>slidr</code> namespace provides the following function calls:</p>
+<pre><code class="lang-javascript javascript"><span class="comment">/**
+ * Current version.
+ * @return {string} major.minor.patch.
+ */</span>
+ <span class="function"><span class="keyword">function</span> <span class="title">version</span><span class="params">()</span> {</span>};
+
+<span class="comment">/**
+ * Available transitions.
+ * @return {Array} of transitions.
+ */</span>
+ <span class="function"><span class="keyword">function</span> <span class="title">transitions</span><span class="params">()</span> {</span>};
+
+<span class="comment">/**
+ * Creates and returns a Slidr.
+ * Calling create on the same element twice returns the already instantiated Slidr.
+ * @param {string} id The element id to turn into a Slidr.
+ * @param {Object=} opt_settings Settings to apply.
+ */</span>
+ <span class="function"><span class="keyword">function</span> <span class="title">create</span><span class="params">(id, opt_settings)</span> {</span>};</code></pre>
+<h3>Slidr API</h3>
+<p>For javascript control, you can save a reference to the <code>Slidr</code> object as follows:</p>
+<pre><code class="lang-javascript javascript"><span class="comment">// Initialize a Slidr. </span>
+<span class="comment">// Display breadcrumbs, overflow transitions, use cube transition.</span>
+<span class="keyword">var</span> s = slidr.create(<span class="string">'slidr-api-demo'</span>, {
+  breadcrumbs: <span class="literal">true</span>,
+  overflow: <span class="literal">true</span>
+});
+
+<span class="comment">// Add horizontal slides with default linear transition.</span>
+<span class="comment">// The extra "one" allows the slidr to circle back and loop infinitely.</span>
+s.add(<span class="string">'h'</span>, [<span class="string">'one'</span>, <span class="string">'two'</span>, <span class="string">'three'</span>, <span class="string">'one'</span>]);
+
+<span class="comment">// Add vertical slides using a cube transition.</span>
+s.add(<span class="string">'v'</span>, [<span class="string">'five'</span>, <span class="string">'four'</span>, <span class="string">'three'</span>, <span class="string">'five'</span>], <span class="string">'cube'</span>);
+
+<span class="comment">// Now start.</span>
+s.start();</code></pre>
+<p><code>Slidr</code> functions are fully chainable (where it makes sense to do so). The following is equivalent:</p>
+<pre><code class="lang-javascript sql">var s = slidr.<span class="operator"><span class="keyword">create</span>(<span class="string">'slidr-api-demo'</span>, {
+  breadcrumbs: <span class="keyword">true</span>,
+  overflow: <span class="keyword">true</span>
+}).<span class="keyword">add</span>(<span class="string">'h'</span>, [<span class="string">'one'</span>, <span class="string">'two'</span>, <span class="string">'three'</span>, <span class="string">'one'</span>])
+  .<span class="keyword">add</span>(<span class="string">'v'</span>, [<span class="string">'five'</span>, <span class="string">'four'</span>, <span class="string">'three'</span>, <span class="string">'five'</span>], <span class="string">'cube'</span>)
+  .<span class="keyword">start</span>();</span></code></pre>
+<p>which produces this:
+          </p>
+</div>
+          <div class="slidr-example">
+            <div style="visibility: visible; opacity: 1; display: block; position: relative; overflow: visible; transition: height 0.05s ease-out 0s, width 0.05s ease-out 0s;" id="slidr-api-demo" class="demo-slides">
+              <div style="display: block; visibility: visible; position: absolute; opacity: 1; z-index: 1; pointer-events: auto; backface-visibility: hidden; transform-style: preserve-3d; animation: 0.4s ease-out 0s normal none 1 running slidr-fade-in;" data-slidr="one">one</div>
+              <div style="display: block; visibility: hidden; position: absolute; opacity: 0; z-index: 0; pointer-events: none; backface-visibility: hidden; transform-style: preserve-3d;" data-slidr="two">two</div>
+              <div style="display: block; visibility: hidden; position: absolute; opacity: 0; z-index: 0; pointer-events: none; backface-visibility: hidden; transform-style: preserve-3d;" data-slidr="three">three</div>
+              <div style="display: block; visibility: hidden; position: absolute; opacity: 0; z-index: 0; pointer-events: none; backface-visibility: hidden; transform-style: preserve-3d;" data-slidr="four">four</div>
+              <div style="display: block; visibility: hidden; position: absolute; opacity: 0; z-index: 0; pointer-events: none; backface-visibility: hidden; transform-style: preserve-3d;" data-slidr="five">five</div>
+            <aside style="opacity: 1; z-index: 3; pointer-events: none; visibility: visible; animation: 0.4s ease-out 0s normal none 1 running slidr-fade-in;" class="disabled" id="slidr-api-demo-breadcrumbs"><ul class="slidr-breadcrumbs"><li></li><li></li><li data-slidr-breadcrumbs="five" class="normal"></li></ul><ul class="slidr-breadcrumbs"><li></li><li></li><li data-slidr-breadcrumbs="four" class="normal"></li></ul><ul class="slidr-breadcrumbs"><li data-slidr-breadcrumbs="one" class="normal active"></li><li data-slidr-breadcrumbs="two" class="normal"></li><li data-slidr-breadcrumbs="three" class="normal"></li></ul></aside><aside style="opacity: 1; z-index: 2; visibility: visible; pointer-events: none; animation: 0.4s ease-out 0s normal none 1 running slidr-fade-in;" class="border breadcrumbs disabled" id="slidr-api-demo-control"><div data-slidr-control="up" class="slidr-control up disabled"></div><div data-slidr-control="down" class="slidr-control down disabled"></div><div data-slidr-control="left" class="slidr-control left"></div><div data-slidr-control="right" class="slidr-control right"></div></aside></div>
+          </div>
+          <div class="markdown"><p>The full list of available functions in a <code>Slidr</code> object is listed below:</p>
+<pre><code class="lang-javascript javascript"><span class="comment">/**
+ * Start the Slidr!
+ * Automatically finds slides to create if nothing was added prior to calling start().
+ * @param {string} opt_start `data-slidr` id to start on.
+ * @return {this}
+ */</span>
+ <span class="function"><span class="keyword">function</span> <span class="title">start</span><span class="params">(opt_start)</span> {</span>};
+
+<span class="comment">/**
+ * Check whether we can slide.
+ * @param {string} next a direction ('up', 'down', 'left', 'right') or a `data-slidr` id.
+ * @return {boolean}
+ */</span>
+ <span class="function"><span class="keyword">function</span> <span class="title">canSlide</span><span class="params">(next)</span> {</span>};
+
+<span class="comment">/**
+ * Slide!
+ * @param {string} next a direction ('up', 'down', 'left', 'right') or a `data-slidr` id.
+ * @return {this}
+ */</span>
+ <span class="function"><span class="keyword">function</span> <span class="title">slide</span><span class="params">(next)</span> {</span>};
+
+<span class="comment">/**
+ * Adds a set of slides.
+ * @param {string} direction `horizontal || h` or `vertical || v`.
+ * @param {Array} ids A list of `data-slidr` id's to add to Slidr. Slides must be direct children of the Slidr.
+ * @param {string=} opt_transition The transition to apply between the slides, or uses the default.
+ * @param {boolean=} opt_overwrite Whether to overwrite existing slide mappings/transitions if conflicts occur.
+ * @return {this}
+ */</span>
+ <span class="function"><span class="keyword">function</span> <span class="title">add</span><span class="params">(direction, ids, opt_transition, opt_overwrite)</span> {</span>};
+
+<span class="comment">/**
+ * Automatically advance to the next slide after a certain timeout. Calls start() if not already called.
+ * @param {int=} opt_msec The number of millis between each slide transition. Defaults to 5000 (5 seconds).
+ * @param {string=} opt_direction 'up', 'down', 'left', or 'right'. Defaults to 'right'.
+ * @param {string=} opt_start The `data-slidr` id to start at (only works if auto is called to start the Slidr).
+ * @return {this}
+ */</span>
+ <span class="function"><span class="keyword">function</span> <span class="title">auto</span><span class="params">(opt_msec, opt_direction, opt_start)</span> {</span>};
+
+<span class="comment">/**
+ * Stop auto transition if it's turned on.
+ * @return {this}
+ */</span>
+ <span class="function"><span class="keyword">function</span> <span class="title">stop</span><span class="params">()</span> {</span>};
+
+<span class="comment">/**
+ * Set custom animation timings.
+ * @param {string|Object} transition Either a transition name (i.e. 'cube'), or a {'transition': 'timing'} object.
+ * @param {string=} opt_timing The new animation timing (i.e "0.5s ease-in"). Not required if transition is an object.
+ * @return {this}
+ */</span>
+ <span class="function"><span class="keyword">function</span> <span class="title">timing</span><span class="params">(transition, opt_timing)</span> {</span>};
+
+<span class="comment">/**
+ * Toggle breadcrumbs.
+ * @return {this}
+ */</span>
+ <span class="function"><span class="keyword">function</span> <span class="title">breadcrumbs</span><span class="params">()</span> {</span>};
+
+<span class="comment">/**
+ * Toggle controls.
+ * @param {string=} opt_scheme Toggle on/off if not present, else change layout. 'border', `corner` or `none`.
+ * @return {this}
+ */</span>
+ <span class="function"><span class="keyword">function</span> <span class="title">controls</span><span class="params">(opt_scheme)</span> {</span>};</code></pre>
+</div>
+          <div class="markdown" id="css"><div class="breadcrumb-link"><div class="action"><a href="#css">CSS</a></div><div class="top"><a href="#">Top</a></div><h2>CSS</h2></div>
+<h3>Temporary scrollbar during transitions</h3>
+<p>On some browsers, <code>Slidr</code>'s that transition beyond the viewport might force an unwanted temporary scrollbar to appear
+(although this won't affect the page, the flickering can still be annoying). To fix this, add the following CSS:</p>
+<pre><code class="lang-css css"><span class="tag">body</span> <span class="rules">{
+  <span class="rule"><span class="attribute">overflow</span>:<span class="value"> hidden;</span></span>
+<span class="rule">}</span></span></code></pre>
+<h3>Dynamic resize</h3>
+<p><code>Slidr</code> follows a fairly straightforward heuristic for figuring out what it's width or height should be. If the <code>width</code>
+and <code>height</code> is explicitly set, <code>Slidr</code> will not resize. Otherwise, it will always adapt to the size of its content.
+You can also set just one and it'll dynamic resize the other.</p>
+<p>If <code>min-width</code> and <code>min-height</code> is defined, <code>Slidr</code> will only resize if the content exceeds those bounds.</p>
+<p>Dynamically resizing (no width/height set):</p>
+<pre><code class="lang-html xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"slidr-inline-dynamic"</span> <span class="attribute">style</span>=<span class="value">"display: inline"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">data-slidr</span>=<span class="value">"one"</span>&gt;</span>good<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">data-slidr</span>=<span class="value">"two"</span>&gt;</span>gorgeous<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">data-slidr</span>=<span class="value">"three"</span>&gt;</span>unbelievable<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+</div>
+          <div class="slidr-example" style="text-align: center; color: #b0b0b0">
+Today was a 
+<div id="slidr-inline-dynamic" style="display: inline-block; visibility: visible; opacity: 1; position: relative; overflow: hidden; transition: height 0.05s ease-out 0s, width 0.05s ease-out 0s; width: 148px; height: 35px;">
+  <div style="display: block; visibility: hidden; position: absolute; opacity: 0; z-index: 0; pointer-events: none; backface-visibility: hidden; transform-style: preserve-3d; animation: 1s cubic-bezier(0.15, 0.9, 0.25, 1) 0s normal none 1 running slidr-cube-out-up-fade-h-35;" data-slidr="one">good</div>
+  <div style="display: block; visibility: hidden; position: absolute; opacity: 0; z-index: 0; pointer-events: none; backface-visibility: hidden; transform-style: preserve-3d; animation: 1s cubic-bezier(0.15, 0.9, 0.25, 1) 0s normal none 1 running slidr-cube-out-up-fade-h-35;" data-slidr="two">gorgeous</div>
+  <div style="display: block; visibility: visible; position: absolute; opacity: 1; z-index: 1; pointer-events: auto; backface-visibility: hidden; transform-style: preserve-3d; animation: 1s cubic-bezier(0.15, 0.9, 0.25, 1) 0s normal none 1 running slidr-cube-in-up-fade-h-35;" data-slidr="three">unbelievable</div>
+<aside style="opacity: 0; z-index: 0; pointer-events: none; visibility: hidden;" class="disabled" id="slidr-inline-dynamic-breadcrumbs"><ul class="slidr-breadcrumbs"><li data-slidr-breadcrumbs="three" class="normal active"></li></ul><ul class="slidr-breadcrumbs"><li data-slidr-breadcrumbs="two" class="normal"></li></ul><ul class="slidr-breadcrumbs"><li data-slidr-breadcrumbs="one" class="normal"></li></ul></aside><aside style="opacity: 0; z-index: 0; visibility: hidden; pointer-events: none;" class="disabled" id="slidr-inline-dynamic-control"><div data-slidr-control="up" class="slidr-control up"></div><div data-slidr-control="down" class="slidr-control down"></div><div data-slidr-control="left" class="slidr-control left disabled"></div><div data-slidr-control="right" class="slidr-control right disabled"></div></aside></div>
+day.
+          </div>
+          <div class="markdown"><p>Static sizing (width and height set):</p>
+<pre><code class="lang-html xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"slidr-inline-static"</span> <span class="attribute">style</span>=<span class="value">"display: inline; width: 155px; height: 30px"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">data-slidr</span>=<span class="value">"one"</span>&gt;</span>good<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">data-slidr</span>=<span class="value">"two"</span>&gt;</span>gorgeous<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">data-slidr</span>=<span class="value">"three"</span>&gt;</span>unbelievable<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+</div>
+          <div class="slidr-example" style="text-align: center; color: #b0b0b0">
+Today was a 
+<div id="slidr-inline-static" style="display: inline-block; width: 155px; height: 30px; visibility: visible; opacity: 1; position: relative; overflow: hidden; transition: height 0.05s ease-out 0s, width 0.05s ease-out 0s;">
+  <div style="display: block; visibility: hidden; position: absolute; opacity: 0; z-index: 0; pointer-events: none; backface-visibility: hidden; transform-style: preserve-3d; animation: 1s cubic-bezier(0.15, 0.9, 0.25, 1) 0s normal none 1 running slidr-cube-out-up-fade-h-24;" data-slidr="one">good</div>
+  <div style="display: block; visibility: hidden; position: absolute; opacity: 0; z-index: 0; pointer-events: none; backface-visibility: hidden; transform-style: preserve-3d; animation: 1s cubic-bezier(0.15, 0.9, 0.25, 1) 0s normal none 1 running slidr-cube-out-up-fade-h-24;" data-slidr="two">gorgeous</div>
+  <div style="display: block; visibility: visible; position: absolute; opacity: 1; z-index: 1; pointer-events: auto; backface-visibility: hidden; transform-style: preserve-3d; animation: 1s cubic-bezier(0.15, 0.9, 0.25, 1) 0s normal none 1 running slidr-cube-in-up-fade-h-24;" data-slidr="three">unbelievable</div>
+<aside style="opacity: 0; z-index: 0; pointer-events: none; visibility: hidden;" class="disabled" id="slidr-inline-static-breadcrumbs"><ul class="slidr-breadcrumbs"><li data-slidr-breadcrumbs="three" class="normal active"></li></ul><ul class="slidr-breadcrumbs"><li data-slidr-breadcrumbs="two" class="normal"></li></ul><ul class="slidr-breadcrumbs"><li data-slidr-breadcrumbs="one" class="normal"></li></ul></aside><aside style="opacity: 0; z-index: 0; visibility: hidden; pointer-events: none;" class="disabled" id="slidr-inline-static-control"><div data-slidr-control="up" class="slidr-control up"></div><div data-slidr-control="down" class="slidr-control down"></div><div data-slidr-control="left" class="slidr-control left disabled"></div><div data-slidr-control="right" class="slidr-control right disabled"></div></aside></div>
+day.
+          </div>
+
+          <div class="markdown"><h3>Slidr controllers</h3>
+<p><code>Slidr</code> controllers are marked up like so:</p>
+<pre><code class="lang-html xml"><span class="tag">&lt;<span class="title">aside</span> <span class="attribute">id</span>=<span class="value">"{slidr-id}-control"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"slidr-control up"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"slidr-control down"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"slidr-control left"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"slidr-control right"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">aside</span>&gt;</span></code></pre>
+<p>You can customize the look of <code>Slidr</code> controls through CSS selectors like below:</p>
+<pre><code class="lang-css javascript"><span class="comment">// Customizing a specific controller arrow.</span>
+aside[id=<span class="string">"{slidr-id}-control"</span>] .slidr-control.right {
+  width: <span class="number">50</span>px !important;
+  height: <span class="number">50</span>px !important;
+  top: <span class="number">50</span>% !important;
+  margin-top: -<span class="number">25</span>px !important;
+  right: -<span class="number">25</span>px !important;
+  border-radius: <span class="number">25</span>px;
+  background: url(<span class="string">'/static/images/arrow_right.png'</span>) <span class="number">14</span>px <span class="number">13</span>px no-repeat black;
+  opacity: <span class="number">0.4</span>;
+}
+
+aside[id=<span class="string">"{slidr-id}-control"</span>] .slidr-control.right:hover {
+  opacity: <span class="number">1</span>;
+}</code></pre>
+<p>Note: controller arrows make use of the <code>:after</code> psuedo element.
+To hide the default triangular arrow, use the following CSS:</p>
+<pre><code class="lang-css javascript"><span class="comment">// Hide a single arrow within a single controller.</span>
+aside[id=<span class="string">"{slidr-id}-control"</span>] .slidr-control.right:after {
+  border-color: transparent !important;
+}
+
+<span class="comment">// Hide all arrows within a single controller.</span>
+aside[id=<span class="string">"{slidr-id}-control"</span>] .slidr-control:after {
+  border-color: transparent !important;
+}
+
+<span class="comment">// Hide all Slidr arrows.</span>
+aside[id*=<span class="string">"-control"</span>] .slidr-control:after {
+  border-color: transparent !important;   
+}</code></pre>
+<h3>Slidr breadcrumbs</h3>
+<p><code>Slidr</code> breadcrumbs have a similar HTML markup.
+Each <code>ul</code> denotes an entire row, while each <code>li</code> denotes an individual breadcrumb:</p>
+<pre><code class="lang-html xml"><span class="tag">&lt;<span class="title">aside</span> <span class="attribute">id</span>=<span class="value">"{slidr-id}-breadcrumbs"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"slidr-breadcrumbs"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"normal"</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"normal active"</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+  ...
+<span class="tag">&lt;/<span class="title">aside</span>&gt;</span></code></pre>
+<p>Thus you can configure them like so:</p>
+<pre><code class="lang-css javascript"><span class="comment">// Customize the position, size, border color and background color.</span>
+aside[id=<span class="string">"{slidr-id}-breadcrumbs"</span>] {
+  right: <span class="number">50</span>% !important;
+  margin-right: -<span class="number">41</span>px !important;
+}
+
+aside[id=<span class="string">"{slidr-id}-breadcrumbs"</span>] .slidr-breadcrumbs li {
+  width: <span class="number">15</span>px !important;
+  height: <span class="number">15</span>px !important;
+  margin: <span class="number">3</span>px !important;
+}
+
+aside[id=<span class="string">"{slidr-id}-breadcrumbs"</span>] .slidr-breadcrumbs li.normal {
+  border-color: white !important;
+}
+
+aside[id=<span class="string">"{slidr-id}-breadcrumbs"</span>] .slidr-breadcrumbs li.active {
+  background-color: black !important;
+}</code></pre>
+<p>Altogether, it results in something like this:</p>
+</div>
+          <div class="slidr-example">
+            <div style="visibility: visible; opacity: 1; display: block; position: relative; overflow: visible; transition: height 0.05s ease-out 0s, width 0.05s ease-out 0s;" id="slidr-css-demo" class="demo-slides">
+              <div style="display: block; visibility: visible; position: absolute; opacity: 1; z-index: 1; pointer-events: auto; backface-visibility: hidden; transform-style: preserve-3d; animation: 0.4s ease-out 0s normal none 1 running slidr-fade-in;" data-slidr="one">one</div>
+              <div style="display: block; visibility: hidden; position: absolute; opacity: 0; z-index: 0; pointer-events: none; backface-visibility: hidden; transform-style: preserve-3d;" data-slidr="two">two</div>
+              <div style="display: block; visibility: hidden; position: absolute; opacity: 0; z-index: 0; pointer-events: none; backface-visibility: hidden; transform-style: preserve-3d;" data-slidr="three">three</div>
+            <aside style="opacity: 1; z-index: 3; pointer-events: none; visibility: visible; animation: 0.4s ease-out 0s normal none 1 running slidr-fade-in;" class="disabled" id="slidr-css-demo-breadcrumbs"><ul class="slidr-breadcrumbs"><li data-slidr-breadcrumbs="one" class="normal active"></li><li data-slidr-breadcrumbs="two" class="normal"></li><li data-slidr-breadcrumbs="three" class="normal"></li></ul></aside><aside style="opacity: 1; z-index: 2; visibility: visible; pointer-events: none; animation: 0.4s ease-out 0s normal none 1 running slidr-fade-in;" class="border breadcrumbs disabled" id="slidr-css-demo-control"><div data-slidr-control="up" class="slidr-control up disabled"></div><div data-slidr-control="down" class="slidr-control down disabled"></div><div data-slidr-control="left" class="slidr-control left"></div><div data-slidr-control="right" class="slidr-control right"></div></aside></div>
+          </div>
+          <div class="markdown"><p>In the worst case, feel free to create your own controllers and access via the Slidr API instead!</p>
+<p>For further questions or issues, visit <a href="https://github.com/bchanx/slidr/issues">here</a>.</p>
+</div>
+          <div class="markdown" id="license"><div class="breadcrumb-link"><div class="action"><a href="#license">License</a></div><div class="top"><a href="#">Top</a></div><h2>License</h2></div>
+<p>This software is free to use under the MIT license.</p>
+</div>
+          <div class="breadcrumb-link" style="text-align: center; margin: 20px 0;">
+            <a class="top" style="position: relative; bottom: 0; text-decoration: underline; font-size: 18px;" href="#">Back to top</a>
+          </div>
+        </div>
+      </div>
+    <aside style="opacity: 0; z-index: 0; pointer-events: none; visibility: hidden;" class="" id="slidr-breadcrumbs"><ul class="slidr-breadcrumbs"><li data-slidr-breadcrumbs="home" class="normal active"></li><li data-slidr-breadcrumbs="docs" class="normal"></li></ul></aside><aside style="opacity: 0; z-index: 0; visibility: hidden; pointer-events: none;" class="" id="slidr-control"><div data-slidr-control="up" class="slidr-control up disabled"></div><div data-slidr-control="down" class="slidr-control down disabled"></div><div data-slidr-control="left" class="slidr-control left disabled"></div><div data-slidr-control="right" class="slidr-control right"></div></aside></div>
+  </div>
+</div>
+    <div id="footer">
+  <div id="blog-footer-container">
+  <div id="footer-links">
+  <div class="icon">
+    <a href="https://www.twitter.com/bchanx"><div class="logo-twitter-small">
+  <div class="body"></div>
+  <div class="body-none"></div>
+  <div class="beak-bottom"></div>
+  <div class="beak-bottom-none"></div>
+  <div class="wing-bottom"></div>
+  <div class="wing-bottom-none"></div>
+  <div class="wing-middle"></div>
+  <div class="wing-middle-none"></div>
+  <div class="wing-top"></div>
+  <div class="wing-top-none"></div>
+  <div class="beak-top"></div>
+  <div class="beak-top-none"></div>
+  <div class="head"></div>
+</div></a>
+  </div>
+  <div class="icon">
+    <a href="https://www.github.com/bchanx"><div class="logo-github-small">
+  <div class="ear-one-left"></div>
+  <div class="ear-one-none"></div>
+  <div class="ear-one-right"></div>
+  <div class="ear-two-right"></div>
+  <div class="ear-two-none"></div>
+  <div class="ear-two-left"></div>
+  <div class="body-bottom"></div>
+  <div class="body-left-none"></div>
+  <div class="body-right-none"></div>
+  <div class="tail-end"></div>
+  <div class="tail-body"></div>
+  <div class="tail-body-spots"></div>
+  <div class="tail-end-none"></div>
+  <div class="tail-body-none"></div>
+  <div class="tail-tip"></div>
+  <div class="body-left"></div>
+  <div class="body-right"></div>
+  <div class="head"></div>
+  <div class="chin-left"></div>
+  <div class="chin-right"></div>
+</div></a>
+  </div>
+  <div class="icon">
+    <a href="https://www.linkedin.com/in/bchanx"><div class="logo-linkedin-small">
+  <div class="i-dot"></div>
+  <div class="i-body"></div>
+  <div class="n-body"></div>
+  <div class="n-curve"></div>
+  <div class="n-curve-none"></div>
+</div></a>
+  </div>
+</div>
+  <div id="footer-copyright">© 2013-2014 <a href="http://www.bchanx.com/">Brian Chan</a></div>
+</div>
+</div>
+
+    <script type="text/javascript" src="index_files/jquery.js"></script>
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-31899968-1']);
+      _gaq.push(['_trackPageview']);
+      (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();
+    </script>
+    <!--[if lt IE 9]><script>bchanx = bchanx || {}; bchanx.isIE = true;</script><![endif]-->
+    
+      <script type="text/javascript" charset="UTF-8" src="index_files/demo-slidr.js"></script>
+    
+
+    
+  <script type="text/javascript" src="index_files/highlight.js"></script>
+  <script type="text/javascript" src="index_files/marked.js"></script>
+  
+    <script type="text/javascript" src="index_files/slidr.js"></script>
+  
+
+
+  
+
+</body></html>

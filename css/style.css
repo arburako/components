@@ -473,16 +473,27 @@
 /* Image-Backgrounds
  * --------------------------------------- */
 	.bg-1 {background-image: url(../img/components/3D-sook-showcase.png);}
-	.bg-2 {background-image: url(../img/components/innerfade.png);}
-	.bg-3 {background-image: url(../img/components/auto-montage.png);}
-	.bg-4 {background-image: url(../img/components/rotating-card.png);}
-	.bg-5 {background-image: url(../img/components/browser-gallery.png);}
-	.bg-6 {background-image: url(../img/components/animated-svgs.png);}
-	.bg-7 {background-image: url(../img/components/animated-grid.png);}
-	.bg-8 {background-image: url(../img/components/bootstrap-moving-box-carousel.png);}
-	.bg-9 {background-image: url(../img/components/apple-slider.png);}
-	.bg-10 {background-image: url(../img/components/circular-content-carousel.png);}
+	.bg-2 {background-image: url(../img/components/expandable-grid.png);}
+	.bg-3 {background-image: url(../img/components/fullscreen-layout-with-page-transitions.png);}
+	.bg-4 {background-image: url(../img/components/on-scroll-effect-layout.png);}
+	.bg-5 {background-image: url(../img/components/portfolio-image-navigation.png);}
+	.bg-6 {background-image: url(../img/components/sidebar-transitions.png);}
+	.bg-7 {background-image: url(../img/components/sliding-horizontal-layout.png);}
+	.bg-8 {background-image: url(../img/components/slidr-js.png);}
+	.bg-9 {background-image: url(../img/components/split-layout.png);}
+	.bg-10 {background-image: url(../img/components/vertical-showcase-slider.png);}
 
+
+	.bg-11 {background-image: url(../img/components/smart-fixed-navigation.png);}
+	.bg-12 {background-image: url(../img/components/css3-page-transitions.png);}
+	.bg-13 {background-image: url(../img/components/fullscreen-layout-with-page-transitions.png);}
+	.bg-14 {background-image: url(../img/components/on-scroll-effect-layout.png);}
+	.bg-15 {background-image: url(../img/components/portfolio-image-navigation.png);}
+	.bg-16 {background-image: url(../img/components/sidebar-transitions.png);}
+	.bg-17 {background-image: url(../img/components/sliding-horizontal-layout.png);}
+	.bg-18 {background-image: url(../img/components/slidr-js.png);}
+	.bg-19 {background-image: url(../img/components/split-layout.png);}
+	.bg-20 {background-image: url(../img/components/vertical-showcase-slider.png);}
 
 
 /* Menu
@@ -702,7 +713,7 @@
 /* Info Box
  * --------------------------------------- */
 	.info-box {
-		height:320px;
+		height: 575px;
 		margin: 5%;
 		overflow: hidden;
 		background: #fff;
@@ -764,6 +775,10 @@
 		color: #2b2b2b;
 		text-align: center;
 		margin: 40px auto;
+	}
+
+	.info-box {
+		height: 350px;
 	}
 
     }
